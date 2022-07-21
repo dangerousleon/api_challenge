@@ -8,9 +8,9 @@ public class RegisterItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private Integer id;
 
-    public RegisterItem(Long id, String itemId, Long counting) {
+    public RegisterItem(Integer id, String itemId, Long counting) {
         this.id = id;
         this.itemId = itemId;
         this.counting = counting;
@@ -46,11 +46,11 @@ public class RegisterItem {
         this.counting = counting;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 }

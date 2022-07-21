@@ -11,6 +11,7 @@
 	<groupId>com.challenge.app.coupon</groupId>
 	<artifactId>api_challenge</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>api_challenge</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -37,19 +38,17 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.postgresql</groupId>
-			<artifactId>postgresql</artifactId>
-			<version>42.3.2</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.flywaydb/flyway-core -->
 		<dependency>
 			<groupId>org.flywaydb</groupId>
-			<artifactId>flyway-core</artifactId>
-			<version>6.4.1</version>
+			<artifactId>flyway-mysql</artifactId>
 		</dependency>
-
-
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.29</version>
+		</dependency>
 	</dependencies>
 
 	<build>
