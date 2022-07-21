@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Repository
-public interface RegisterItemRepository extends JpaRepository<RegisterItem, Long> {
+public interface RegisterItemRepository extends JpaRepository<RegisterItem, Integer> {
     Optional<RegisterItem> findByItemId(String itemId);
 
 
-    @Query(value = "select * from public.register_item  order by counting DESC limit 5", nativeQuery = true)
+    @Query(value = "select * from register_item  order by counting DESC limit 5", nativeQuery = true)
     List<RegisterItem> getRegisterItemOrderByCountingDesc();
 
 }
